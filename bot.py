@@ -8,7 +8,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+BOT_TOKEN = "8754552598:AAGEQxAv7vlIZYou6q2sv7SC2geIMHcIyOY"
 
 SITES = [
     "https://ru-print.ru/",
