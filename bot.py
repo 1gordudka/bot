@@ -7,8 +7,11 @@ from zoneinfo import ZoneInfo
 from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart
 from aiogram.types import Message
+from aiogram.client.session.aiohttp import AiohttpSession
 
-BOT_TOKEN = "8754552598:AAGEQxAv7vlIZYou6q2sv7SC2geIMHcIyOY"
+session = AiohttpSession(proxy="socks5://206.123.156.216:4207")
+
+BOT_TOKEN = Bot("8754552598:AAGEQxAv7vlIZYou6q2sv7SC2geIMHcIyOY", session=session)
 PORT = int(os.environ.get("PORT", 8080))
 
 SITES = [
